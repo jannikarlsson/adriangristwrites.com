@@ -1,0 +1,112 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Adrian Grist</title>
+    <meta name="description" content="">
+    <meta name="author" content="Adrian Grist">
+
+    <meta property="og:title" content="Adrian Grist">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="Description">
+    <meta property="og:image" content="">
+
+    <link rel="stylesheet" href="new-style.css">
+
+  <!-- Javascript hamburger menu toggle for mobile view -->
+<script>
+    let burgerToggle = document.getElementById('burger');
+        let burgerMenu = document.getElementById('burger-menu');
+        burgerToggle.addEventListener("click", () => {
+            burgerMenu.classList.toggle('expanded');
+            burgerToggle.innerHTML == '<span class="material-icons">menu</span>' ? burgerToggle.innerHTML = '<span class="material-icons">close</span>' : burgerToggle.innerHTML = '<span class="material-icons">menu</span>';
+    });
+    </script>
+</head>
+
+<body>
+<!-- Header section with menus -->
+    <header>
+        <!-- Site logo -->
+        <a id="logo" href="#"><h1>Adrian Grist</h1></a>
+        <!-- Burger icon -->
+    <div id="burger"><span class="material-icons">menu</span></div>
+
+<!-- Desktop menu -->
+    <nav class="reg-menu">
+        <ul>
+            <li><a href="#book">About the book</a></li>
+            <li><a href="#buy">Buy the book</a></li>
+            <li><a href="#author">About the author</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Mobile menu -->
+<nav id="burger-menu">
+        <ul>
+            <li><a href="#book">About the book</a></li>
+            <li><a href="#buy">Buy the book</a></li>
+            <li><a href="#author">About the author</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+<!-- Main page content -->
+<div id="page-wrap">
+
+<!-- About the book section -->
+<section id="book">
+    <div class="wrapper">
+    <h2>Transplanted & exposed</h2>
+    <figure>
+    <img src="images/book-cover.jpg" alt="Book cover image"><figcaption><p>© Will drew this</p></figcaption></figure>
+    <p>Donec dapibus, lorem at convallis tempor, elit ante aliquam mauris, eu tincidunt sem eros eget eros. Aliquam erat justo, tincidunt nec cursus rutrum, fermentum sed enim. In vitae posuere neque, sed posuere lorem. Morbi consectetur mauris nec lobortis dictum. Nunc bibendum ipsum quis erat consequat, in tincidunt odio blandit. Donec elementum mauris sit amet nulla rhoncus pulvinar. Aliquam non metus maximus, lobortis felis sed, vestibulum lorem. Nunc venenatis mollis orci. Etiam luctus volutpat metus, ut molestie urna porttitor nec. Curabitur maximus magna sapien, in ultrices nulla rutrum quis. Pellentesque ut quam pellentesque, maximus metus sit amet, egestas justo. Phasellus pulvinar libero eu tellus fermentum, ac ultrices lorem viverra. Phasellus nunc lorem, ultricies sed turpis vel, eleifend molestie augue.</p>
+    <p>Curabitur sit amet efficitur est. Nam ipsum ante, lobortis in pharetra vitae, ornare nec nisl. Morbi imperdiet, ipsum ut rhoncus feugiat, orci augue venenatis risus, id rutrum quam nunc a sapien. Sed tristique condimentum tincidunt. Vestibulum id augue eget sapien tempus tincidunt id eget magna. Vestibulum lectus dui, commodo vitae ipsum eu, finibus venenatis sem. In non mi nec metus mollis rutrum a quis nisl. Sed imperdiet accumsan massa, a sollicitudin lectus blandit lacinia. Fusce dapibus sed eros vitae imperdiet. Aliquam erat volutpat. Praesent ex mauris, pellentesque vel ipsum ac, faucibus venenatis magna. Aliquam ac arcu cursus, porttitor tellus id, maximus arcu. Fusce eu ex sagittis, cursus nulla et, dapibus eros.</p>
+    </div>
+</section>
+
+<!-- Buy the book section -->
+<section id="buy">
+    <div class="wrapper">
+    <h2>Buy the book</h2>
+    <ul>
+        <li><a href="#" class="button">LINK 1</a></li>
+        <li><a href="#">LINK 2</a></li>
+        <li><a href="#">LINK 3</a></li>
+    </ul>
+    </div>
+</section>
+
+<!-- Quote section -->
+<section id="quote">
+    <h2 class="visually-hidden">Quote about the book</h2>
+    <div class="wrapper">
+        <blockquote>"Well, this is not exacly how I remember it."<p>Adrian's mom</p>
+    </blockquote></div>
+</section>
+
+<!-- About author section -->
+<section id="author">
+    <div class="wrapper">
+        <h2>About the author</h2>
+    <figure>
+    <img src="images/adrian-face.jpg" alt="Photo of Adrian's face" width="400"><figcaption><p>© Richard took this</p></figcaption></figure>
+    <p>Donec dapibus, lorem at convallis tempor, elit ante aliquam mauris, eu tincidunt sem eros eget eros. Aliquam erat justo, tincidunt nec cursus rutrum, fermentum sed enim. In vitae posuere neque, sed posuere lorem. Morbi consectetur mauris nec lobortis dictum. Nunc bibendum ipsum quis erat consequat, in tincidunt odio blandit. Donec elementum mauris sit amet nulla rhoncus pulvinar. Aliquam non metus maximus, lobortis felis sed, vestibulum lorem. Nunc venenatis mollis orci. Etiam luctus volutpat metus, ut molestie urna porttitor nec. Curabitur maximus magna sapien, in ultrices nulla rutrum quis. Pellentesque ut quam pellentesque, maximus metus sit amet, egestas justo. Phasellus pulvinar libero eu tellus fermentum, ac ultrices lorem viverra. Phasellus nunc lorem, ultricies sed turpis vel, eleifend molestie augue.</p>
+    <p>Curabitur sit amet efficitur est. Nam ipsum ante, lobortis in pharetra vitae, ornare nec nisl. Morbi imperdiet, ipsum ut rhoncus feugiat, orci augue venenatis risus, id rutrum quam nunc a sapien. Sed tristique condimentum tincidunt. Vestibulum id augue eget sapien tempus tincidunt id eget magna. Vestibulum lectus dui, commodo vitae ipsum eu, finibus venenatis sem. In non mi nec metus mollis rutrum a quis nisl. Sed imperdiet accumsan massa, a sollicitudin lectus blandit lacinia. Fusce dapibus sed eros vitae imperdiet. Aliquam erat volutpat. Praesent ex mauris, pellentesque vel ipsum ac, faucibus venenatis magna. Aliquam ac arcu cursus, porttitor tellus id, maximus arcu. Fusce eu ex sagittis, cursus nulla et, dapibus eros.</p>
+    </div>
+</section>
+</div>
+
+<!-- Footer section -->
+<footer class="wrap" id="contact">
+    <h2>Get in touch</h2>
+    <p>Social icons etc</p>
+</footer>
+</body>
+</html>
