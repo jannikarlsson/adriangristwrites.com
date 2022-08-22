@@ -2,6 +2,16 @@
 
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7DK57KH58C"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7DK57KH58C');
+</script>
+    <!-- End of google tag -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -15,17 +25,11 @@
     <meta property="og:description" content="Description">
     <meta property="og:image" content="">
 
-    <link rel="stylesheet" href="new-style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/icons/favicon.ico">
 
-  <!-- Javascript hamburger menu toggle for mobile view -->
-<script>
-    let burgerToggle = document.getElementById('burger');
-        let burgerMenu = document.getElementById('burger-menu');
-        burgerToggle.addEventListener("click", () => {
-            burgerMenu.classList.toggle('expanded');
-            burgerToggle.innerHTML == '<span class="material-icons">menu</span>' ? burgerToggle.innerHTML = '<span class="material-icons">close</span>' : burgerToggle.innerHTML = '<span class="material-icons">menu</span>';
-    });
-    </script>
+    <!-- Script for burger menu -->
+  <script async src="burger.js"></script>
 </head>
 
 <body>
@@ -63,11 +67,16 @@
 <!-- About the book section -->
 <section id="book">
     <div class="wrapper">
-    <h2>Transplanted & exposed</h2>
+    
     <figure>
-    <img src="images/book-cover.jpg" alt="Book cover image"><figcaption><p>© Will drew this</p></figcaption></figure>
-    <p>Donec dapibus, lorem at convallis tempor, elit ante aliquam mauris, eu tincidunt sem eros eget eros. Aliquam erat justo, tincidunt nec cursus rutrum, fermentum sed enim. In vitae posuere neque, sed posuere lorem. Morbi consectetur mauris nec lobortis dictum. Nunc bibendum ipsum quis erat consequat, in tincidunt odio blandit. Donec elementum mauris sit amet nulla rhoncus pulvinar. Aliquam non metus maximus, lobortis felis sed, vestibulum lorem. Nunc venenatis mollis orci. Etiam luctus volutpat metus, ut molestie urna porttitor nec. Curabitur maximus magna sapien, in ultrices nulla rutrum quis. Pellentesque ut quam pellentesque, maximus metus sit amet, egestas justo. Phasellus pulvinar libero eu tellus fermentum, ac ultrices lorem viverra. Phasellus nunc lorem, ultricies sed turpis vel, eleifend molestie augue.</p>
-    <p>Curabitur sit amet efficitur est. Nam ipsum ante, lobortis in pharetra vitae, ornare nec nisl. Morbi imperdiet, ipsum ut rhoncus feugiat, orci augue venenatis risus, id rutrum quam nunc a sapien. Sed tristique condimentum tincidunt. Vestibulum id augue eget sapien tempus tincidunt id eget magna. Vestibulum lectus dui, commodo vitae ipsum eu, finibus venenatis sem. In non mi nec metus mollis rutrum a quis nisl. Sed imperdiet accumsan massa, a sollicitudin lectus blandit lacinia. Fusce dapibus sed eros vitae imperdiet. Aliquam erat volutpat. Praesent ex mauris, pellentesque vel ipsum ac, faucibus venenatis magna. Aliquam ac arcu cursus, porttitor tellus id, maximus arcu. Fusce eu ex sagittis, cursus nulla et, dapibus eros.</p>
+        <img src="images/book-cover.png" alt="Front cover of the book" width="380"><figcaption><p>© Will Gray</p></figcaption>
+    </figure>
+    <h2>Transplanted & exposed</h2>
+    <p>'Transplanted' is a brutally candid – and at times (I hope) quirkily amusing – memoir that recounts aperiod of my life when a number of health issues spiralled out of control; ultimately that period ended with me requiring a double-organ transplant.</p>
+    <p>Since that operation, I have had to live with a bunch of hidden, and not-so-hidden, disabilities. The book contains flashbacks and anecdotes to certain medical events with the aim to share a frank and unflinching portrayal of ill health, and the complications I – and millions like me – face on a day-to-day basis.</p>
+    <p>These memories are recalled during the corona pandemic, which put the lives of the most vulnerable in our society into sharp focus. But this book is not about the pandemic per se, rather it is meant as a window on, and exploration of, a life being lived with hidden disabilities.</p>
+    <p>Among the heart-wrenching, stomach churning and downright bizarre memories, there are tales of being on dialysis, being in a wheelchair, being in a coma, partially sightedness, having my genitals mutilated, and being awake while a surgeon fumbles around wrist-deep inside my innards.</p>
+    <p>This book might be a bit piss-y, poo-y, icky, sicky, bile-y and bloody, but its intention isn't really to offend or make you feel uncomfortable, it's there to enlighten and entertain.</p>
     </div>
 </section>
 
@@ -75,10 +84,12 @@
 <section id="buy">
     <div class="wrapper">
     <h2>Buy the book</h2>
+    <p>The book is available in paperback and Kindle form. I always keep a stock of paperbacks in the UK and Sweden, so feel free to contact me directly. The price is £15 + £2 post and packaging in the UK, and 190 kr + 57 kr post and packaging in Sweden. Email me for a 20 per cent book club discount if you buy five or more copies (UK and Sweden only).</p>
     <ul>
-        <li><a href="#" class="button">LINK 1</a></li>
-        <li><a href="#">LINK 2</a></li>
-        <li><a href="#">LINK 3</a></li>
+        <li><a href="https://www.amazon.co.uk/Transplanted-Exposed-memoir-through-pandemic-ebook/dp/B0B9GXWKPH/" class="button">Buy from Amazon (UK)</a></li>
+        <li><a href="https://www.amazon.se/-/en/dp/9152736016/" class="button">Buy from Amazon (Sweden)</a></li>
+        <li><a href="https://www.amazon.com/Transplanted-Exposed-memoir-through-pandemic/dp/9152736016" class="button">Buy from Amazon (US)</a></li>
+        <li><a href="mailto:hello@adriangristwrites.com?subject=I%20would%20like%20to%20buy%20your%20book" class="button">Buy from the author</a></li>
     </ul>
     </div>
 </section>
@@ -87,18 +98,22 @@
 <section id="quote">
     <h2 class="visually-hidden">Quote about the book</h2>
     <div class="wrapper">
-        <blockquote>"Well, this is not exacly how I remember it."<p>Adrian's mom</p>
-    </blockquote></div>
+        <blockquote>"Adrian IS funny. He's always had a way with words. And he's brutally honest and never pulls his punches."<p>Sinead Corr, News editor, <br>Bishop&#39;s Stortford Independent</p>
+        </blockquote>
+    </div>
 </section>
 
 <!-- About author section -->
 <section id="author">
     <div class="wrapper">
         <h2>About the author</h2>
-    <figure>
-    <img src="images/adrian-face.jpg" alt="Photo of Adrian's face" width="400"><figcaption><p>© Richard took this</p></figcaption></figure>
-    <p>Donec dapibus, lorem at convallis tempor, elit ante aliquam mauris, eu tincidunt sem eros eget eros. Aliquam erat justo, tincidunt nec cursus rutrum, fermentum sed enim. In vitae posuere neque, sed posuere lorem. Morbi consectetur mauris nec lobortis dictum. Nunc bibendum ipsum quis erat consequat, in tincidunt odio blandit. Donec elementum mauris sit amet nulla rhoncus pulvinar. Aliquam non metus maximus, lobortis felis sed, vestibulum lorem. Nunc venenatis mollis orci. Etiam luctus volutpat metus, ut molestie urna porttitor nec. Curabitur maximus magna sapien, in ultrices nulla rutrum quis. Pellentesque ut quam pellentesque, maximus metus sit amet, egestas justo. Phasellus pulvinar libero eu tellus fermentum, ac ultrices lorem viverra. Phasellus nunc lorem, ultricies sed turpis vel, eleifend molestie augue.</p>
-    <p>Curabitur sit amet efficitur est. Nam ipsum ante, lobortis in pharetra vitae, ornare nec nisl. Morbi imperdiet, ipsum ut rhoncus feugiat, orci augue venenatis risus, id rutrum quam nunc a sapien. Sed tristique condimentum tincidunt. Vestibulum id augue eget sapien tempus tincidunt id eget magna. Vestibulum lectus dui, commodo vitae ipsum eu, finibus venenatis sem. In non mi nec metus mollis rutrum a quis nisl. Sed imperdiet accumsan massa, a sollicitudin lectus blandit lacinia. Fusce dapibus sed eros vitae imperdiet. Aliquam erat volutpat. Praesent ex mauris, pellentesque vel ipsum ac, faucibus venenatis magna. Aliquam ac arcu cursus, porttitor tellus id, maximus arcu. Fusce eu ex sagittis, cursus nulla et, dapibus eros.</p>
+        <figure>
+            <img src="images/adrian-face.jpg" alt="Photo of Adrian's face" width="380"><figcaption><p>© Robin Moore</p></figcaption>
+        </figure>
+        <p>Adrian looks healthy. Healthy enough, anyway. No one looks at him and quietly ponders with pity, How does he live like that? How does he sleep/eat/pee? And as someone with a number of disabilities and significant health issues, he is well aware of how very fortunate he is to be able to say that.</p>
+        <p>But here are some things you cannot see: you cannot see that both his feet are acutely deformed, so much so he could probably borrow the Elephant Man's old shoes; you cannot see the transplant scars, so glaringly huge he can jovially pass them off as shark bites; you cannot see the bullet-like wounds where various tubes have been inserted into his guts for months on end. You cannot see the wheelchair that he dreads he will have to use again. Nope, you cannot see any of that, but then, he cannot see you either, at least he cannot see you very well, partial-sightedness puts pay to that.</p>
+        <p>He is but one speck on the spectrum of disability, but a speck who is afforded both the luxury of time and inclination to share his story.</p>
+        <p>During the convalescence period post-transplant surgery, Adrian left a comment on a music blog. Now, more than 12 years later, he has married the author of that blog and lives in Sweden where he works in research communication for a university.</p>
     </div>
 </section>
 </div>
@@ -106,7 +121,13 @@
 <!-- Footer section -->
 <footer class="wrap" id="contact">
     <h2>Get in touch</h2>
-    <p>Social icons etc</p>
+    <div>
+        <a href="mailto:hello@adriangristwrites.com"><img src="images/icons/email.png" width="40" alt="Send an email" class="social"></a>
+        <!-- <a href="#"><img src="images/icons/twitter.png" width="40" alt="Author's twitter" class="social"></a> -->
+        <a href="https://www.instagram.com/adrian_writes_rongs"><img src="images/icons/instagram.png" width="40" alt="Author's instagram" class="social"></a>
+        <a href="https://se.linkedin.com/in/adrian-grist-673a4452"><img src="images/icons/linkedin.png" width="40" alt="Author's LinkedIn" class="social"></a>
+    </div>
 </footer>
+
 </body>
 </html>

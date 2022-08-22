@@ -74,7 +74,8 @@ p {
 
 header {
     position: relative;
-    background-color: #437A63;
+    /* background-color: #437A63; */
+    background-color: #444;
     display: flex;
     justify-content: space-between;
     padding: 2em 2em 2em 3em;
@@ -204,7 +205,7 @@ figcaption {
 }
 
 #buy a:hover {
-    background-color: #90C4AA;
+    background-color: #333;
     box-shadow: 0px 15px 20px #90C4AA;
     color: #fff;
     transform: translateY(-7px);
@@ -221,7 +222,8 @@ figcaption {
 }
 
 #quote blockquote {
-    font-family:'ENRIQMedium', 'Montserrat', sans-serif;
+    /* font-family:'ENRIQMedium', 'Montserrat', sans-serif; */
+    font-family: 'Manrope', sans-serif;
     font-size: 1.5em;
     line-height: 120%;
     margin: auto;
@@ -233,7 +235,7 @@ blockquote p {
     font-family: 'Montserrat', sans-serif;
     /* font-style: italic;
     font-weight: bold; */
-    font-size: 0.8em;
+    font-size: 0.6em;
     padding-top: 1em;
 }
 
@@ -257,7 +259,8 @@ blockquote p {
 /* Footer style */
 
 footer {
-    background-color: #437A63;
+    /* background-color: #437A63; */
+    background-color: #444;
     padding: 2em 2em 2em 3em;
     color: white;
 }
@@ -274,6 +277,10 @@ footer h2 {
     clip-path: polygon(0 0,100% 20%,100% 100%,0% 100%);
     z-index: 4
 
+}
+
+.social {
+    margin-right: 2em;
 }
 
 /* Mobile style */
@@ -347,6 +354,16 @@ footer h2 {
 
     section h2 {
         font-size: 2em;
+        float: left;
+    }
+
+    #buy h2 {
+        width: 100%;
+    }
+
+    figcaption {
+        text-align: right;
+        margin-right: 3em;
     }
 }
 
