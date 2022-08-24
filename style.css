@@ -187,6 +187,10 @@ figcaption {
 }
 
 #buy a {
+    color: black;
+}
+
+#buy .btn {
     padding: 1.3em 3em;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
