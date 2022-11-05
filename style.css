@@ -393,6 +393,14 @@ footer h2 {
         padding-top: 2em;
     }
 
+    .quotes-wrapper {
+        display: inline-block;
+    }
+
+    .quote-column {
+        width: 90%;
+    }
+
     #logo {
         margin: auto;
         width: 100%;
